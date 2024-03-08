@@ -1,0 +1,79 @@
+header {
+    background-color: #f2f2f2; /* Light gray background */
+    color: #333; /* Dark gray font color */
+    padding: 0px 0;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    transition: background-color 0.3s ease;
+    height: 100px; /* Adjust the height as needed */
+     
+}
+
+header .containerH {
+
+    padding: 0px 0; /* Adjust padding top and bottom */
+    height: 100px; /* Adjust the height as needed */
+    line-height: 20px; /* Adjust line height to vertically center content */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 0px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li:last-child {
+    margin-right: 0; /* Remove margin for the last link */
+}
+
+header nav ul li a {
+    color: #333; /* Dark gray font color */
+    text-decoration: none;
+    text-transform: uppercase; /* Uppercase text */
+}
+
+/* Change link color when header background is white */
+header.white-bg a {
+    color: #333; /* Dark gray font color */
+}
+
+/* Change link color when header background is dark gray */
+header.dark-bg a {
+    color: #fff; /* White font color */
+}
+
+
+
+.logo h1 {
+    font-size: 18px; /* Adjust the default font size as needed */
+    line-height: 1; /* Adjust the line height as needed */
+    padding-left: 10px;
+
+}
+
+/* Media query for smaller screens */
+@media screen and (min-width: 768px) {
+    .logo h1 {
+        font-size: 22px; /* Increase font size for bigger screens */
+        padding-left: 20px;
+    }
+    header .containerH {
+        padding-right: 20px;
+    }
+}
+
+
+

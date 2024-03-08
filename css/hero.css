@@ -1,0 +1,79 @@
+/* Styles for hero section */
+#hero {
+    position: relative;
+    text-align: center;
+    padding: 100px 20px; /* Adjust padding as needed */
+
+
+}
+
+
+.hero-content {
+    height: 100%;
+    
+}
+
+.first-line, .second-line {
+    font-size: 50px; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #ffcc00; /* Soft yellow color */
+    margin: 0;
+    padding: 0;
+    transform: translateX(-100%); /* Move elements off-screen initially */
+
+}
+
+@media screen and (min-width: 768px) {
+    .first-line, .second-line {
+        font-size: 100px; /* Increase font size for larger screens */
+    }
+}
+
+.first-line {
+    animation: slideFromLeft 2s forwards;
+}
+
+.second-line {
+    animation: slideFromRight 2s forwards;
+}
+
+/* Keyframes for slide in animation from left */
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(-10%); /* Bring first line to the middle of the screen */
+    }
+}
+
+/* Keyframes for slide in animation from right */
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(12%); /* Bring second line to the middle of the screen */
+    }
+}
+
+
+/* Styles for arrow-icon */
+.material-icons {
+    position: absolute;
+    font-size: 36px;
+    left: 50%;
+    color: #fff;
+    animation: shakeArrow 0.5s infinite alternate;
+
+}
+
+
+@keyframes shakeArrow {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(-50%) translateY(10px);
+    }
+}
