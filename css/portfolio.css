@@ -1,0 +1,124 @@
+#portfolio .container {
+	
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0;
+	padding-right: 0;
+	height: auto;
+	
+}
+.titulo-aliados {
+	width: 100%;
+	/*background-color: lightgray;*/
+	padding: 30px;
+	margin: 0;
+}
+.tiles-marcas {
+	/*background-color: lightblue;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.aliado1, .aliado2, .aliado3, .aliado4 {
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	height: 30vh;
+}
+
+.aliado1 h2, .aliado2 h2, .aliado3 h2, .aliado4 h2{
+	margin: 0;
+	padding-left:20px;
+	padding-top:20px;
+	z-index: 3;
+	color:white;
+	position: relative;
+} 
+
+.aliado1 p, .aliado2 p, .aliado3 p, .aliado4 p{
+	margin: 0;
+	padding-left:20px;
+	z-index: 3;
+	color:white;
+	position: relative;
+} 
+
+.aliado1{
+	background-image: url('../img/aliados/1.jpg');
+	background-size: cover;
+}
+
+.aliado2{
+	background-image: url('../img/aliados/2.jpg');
+	background-size: cover;
+}
+
+.aliado3{
+	background-image: url('../img/aliados/3.jpg');
+	background-size: cover;
+}
+
+.aliado4{
+	background-image: url('../img/aliados/4.jpg');
+	background-size: cover;
+}
+
+.aliado1::before, .aliado2:before, .aliado3::before, .aliado4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(100, 100, 100, 0.7); /* Initial transparency */
+    z-index: 1;
+    transition: background-color 0.3s ease; /* Transition effect */
+    pointer-events: none; /* Prevents the overlay from blocking mouse events */
+}
+
+.aliado1:hover::before, .aliado2:hover::before, .aliado3:hover::before, .aliado4:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 204, 0, 0.3); /* Adjust the alpha value to change the transparency */
+    z-index: 1;
+    transition: background-color 0.5s ease; /* Transition effect */
+}
+
+/**
+ * PANTALLAS GRANDES
+ * */
+@media screen and (min-width: 768px) {
+	#portfolio .container {
+		display: flex;
+	}
+    
+	.titulo-aliados {
+		width: 30%;
+	}
+	.tiles-marcas {
+		width: 70%;
+	}
+	.aliado1, .aliado2, .aliado3, .aliado4 {
+		width: 50%;
+		height: 50vh;
+
+	} 
+
+}
+
+/*
+Foto de Matheus Bertelli: https://www.pexels.com/es-es/foto/foto-de-personas-sonriendo-y-posando-para-una-foto-2467506/
+Foto de fauxels: https://www.pexels.com/es-es/foto/foto-de-hombre-sentado-frente-a-la-gente-3184299/
+Foto de Afta Putta Gunawan: https://www.pexels.com/es-es/foto/cafeteria-702251/
+Foto de Jadson Thomas: https://www.pexels.com/es-es/foto/mujer-pintura-exterior-jardin-542555/
+*/

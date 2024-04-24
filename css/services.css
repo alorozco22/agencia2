@@ -50,7 +50,7 @@
 .animacion-texto h2 {
 	position: absolute;
 	/*transform: translate(-50%, -50%);*/
-	font-size: 5em;
+	font-size: 4.5em;
 }
 
 .animacion-texto h2:nth-child(1){
