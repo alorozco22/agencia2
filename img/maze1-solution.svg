@@ -2,14 +2,14 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="55.068588mm"
-   height="62.24868mm"
-   viewBox="0 0 55.068588 62.24868"
+   width="224.51601"
+   height="223.39101"
+   viewBox="0 0 59.403193 59.105537"
    version="1.1"
    id="svg1"
    xml:space="preserve"
    inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
-   sodipodi:docname="maze.svg"
+   sodipodi:docname="maze1-solution.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -23,15 +23,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="1.2623761"
-     inkscape:cx="428.953"
-     inkscape:cy="379.83927"
+     inkscape:zoom="1.7852694"
+     inkscape:cx="112.58805"
+     inkscape:cy="111.74784"
      inkscape:window-width="1366"
      inkscape:window-height="697"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" /><defs
+     inkscape:current-layer="layer2" /><defs
      id="defs1" /><g
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
@@ -159,6 +159,7 @@
      inkscape:label="Capa 2"
      style="display:inline"
      transform="translate(-33.671326,-68.117247)"><path
-       style="fill:none;stroke:#f3f104;stroke-width:0.564999;stroke-dasharray:none;stroke-opacity:1"
-       d="m 33.953828,68.117246 v 4.401423 l 30.600364,1.047959 4.191831,3.772646 8.802843,-4.191831 10.898759,-0.419182 -0.838367,25.570166 -10.689166,9.641213 -2.5151,-0.20959 0.838366,-7.12612 4.611013,-5.030192 -2.72469,-4.401423 -9.222025,-3.982239 -6.916521,4.611013 -1.047959,7.964479 -3.982238,1.257552 0.209592,25.36057 -18.024871,0.41919 v 3.56305"
-       id="path42" /></g></svg>
+       style="fill:none;stroke:#f3f104;stroke-width:0.540268;stroke-dasharray:none;stroke-opacity:1"
+       d="m 35.973304,68.28754 1.263521,3.200108 29.680137,-0.465052 0.654886,4.445879 8.151069,-0.38966 2.152787,-4.457056 12.517625,0.647124 0.0367,25.2893 -3.763275,1.629966 -2.888705,4.130441 -3.778902,4.29716 -3.66256,-1.45796 0.801669,-6.60461 4.409184,-1.246961 0.538446,-7.981414 -9.11597,-0.967707 -2.636679,-3.678592 -6.613777,4.618775 -0.373315,7.615866 -4.646297,1.831283 -0.218765,25.71764 -17.864679,-0.22792 -0.550177,2.80451"
+       id="path42"
+       sodipodi:nodetypes="ccccccccccccccccccccccc" /></g></svg>

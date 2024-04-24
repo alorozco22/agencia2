@@ -44,5 +44,9 @@ function isDarkColor(color) {
 }
 
 
-
+window.addEventListener('load', function() {
+    setTimeout(function() {
+                window.location.href = "#about";
+            }, 3000);
+});
 
