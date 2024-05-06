@@ -1,0 +1,132 @@
+/**
+ * PRIMERO MÓVIL
+ * */
+
+.grid-item {
+	border: 1px solid #ffcc00;
+	border-radius: 10px;
+	padding: 20% 20px;
+	text-align: center;
+	color:white;
+	margin: 20px;
+	max-width: 350px;
+	box-shadow: 0 0 0 #ffcc00, 0 0 0 #ffcc00, 0 0 0 #ffcc00, 0 0 0 #ffcc00;
+
+	
+}
+.title-container {
+	display: inline-block; /* Para la animación del texto */
+}
+
+.grid-item h2 {
+	border-right: 2px solid #ffcc00;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	letter-spacing: 5px;
+}
+
+.type3 h2{
+	animation: escribiendo .6s steps(3),
+	cursor .5s step-end infinite alternate;
+}
+.type4 h2{
+	animation: escribiendo .8s steps(4),
+	cursor .5s step-end infinite alternate;
+}
+.type5 h2{
+	animation: escribiendo 1s steps(5),
+	cursor .5s step-end infinite alternate;
+}
+.type6 h2{
+	animation: escribiendo 1.2s steps(6),
+	cursor .5s step-end infinite alternate;
+}
+.type7 h2{
+	animation: escribiendo 1.4s steps(7),
+	cursor .5s step-end infinite alternate;
+}
+.type8 h2{
+	animation: escribiendo 1.6s steps(8),
+	cursor .5s step-end infinite alternate;
+}
+.type9 h2{
+	animation: escribiendo 1.8s steps(9),
+	cursor .5s step-end infinite alternate;
+}
+.type10 h2{
+	animation: escribiendo 2s steps(10),
+	cursor .5s step-end infinite alternate;
+}
+.type11 h2{
+	animation: escribiendo 2.2s steps(11),
+	cursor .5s step-end infinite alternate;
+}
+.type12 h2{
+	animation: escribiendo 2.4s steps(11),
+	cursor .5s step-end infinite alternate;
+}
+.type13 h2{
+	animation: escribiendo 2.6s steps(12),
+	cursor .5s step-end infinite alternate;
+}
+.type14 h2{
+	animation: escribiendo 2.8s steps(13),
+	cursor .5s step-end infinite alternate;
+}
+
+@keyframes cursor {
+	50% { border-color: transparent }
+}
+
+@keyframes escribiendo {
+	from {width: 0 }
+}
+
+.neon-animation {
+	animation: neonGlow 2s ease-in-out forwards;
+}
+
+
+
+/* Animación del efecto de brillo */
+@keyframes neonGlow {
+	0% {
+		box-shadow: 0 0 0 #ffcc00, 0 0 0 #ffcc00, 0 0 0 #ffcc00, 0 0 0 #ffcc00;
+	}
+	100% {
+		box-shadow: 0 0 2px #ffcc00, 0 0 2px #ffcc00, 0 0 6px #ffcc00, 0 0 8px #ffcc00;
+	}
+}
+
+/* Animación para hacer aparecer el texto en la tarjeta */
+
+
+
+
+/**
+ * PANTALLAS GRANDES
+ * */
+@media screen and (min-width: 768px) {
+	.grid-item {
+		width: auto;	
+	}
+
+	.grid-container {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap:20px;
+		margin:20px;
+	}
+
+	.texto-servicios a {
+		font-size: 1.5em;
+		border-radius: 30px;
+	}
+
+}
+
+.texto-servicios {
+	text-align:center;
+}
+

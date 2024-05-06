@@ -43,7 +43,7 @@ function isDarkColor(color) {
     return brightness < 128;
 }
 
-
+/* Desabilito mientras desarrollo */
 window.addEventListener('load', function() {
     setTimeout(function() {
                 window.location.href = "#about";
