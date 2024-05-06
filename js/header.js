@@ -44,9 +44,10 @@ function isDarkColor(color) {
 }
 
 /* Desabilito mientras desarrollo */
+/*
 window.addEventListener('load', function() {
     setTimeout(function() {
                 window.location.href = "#about";
             }, 3000);
-});
+});*/
 

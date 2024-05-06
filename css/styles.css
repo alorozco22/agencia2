@@ -18,7 +18,6 @@ body {
 }
 
 .container {
-    
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 100px;
@@ -35,7 +34,7 @@ a {
     text-decoration: none;
 }
 
-#hero, #about, #services, #portfolio, #team, #blog, #contact {
+#hero, #about, #services, #portfolio, #team, #impact, #contact {
     /*height: 100vh;*/
     padding: 50px 0;
 }
@@ -48,7 +47,7 @@ a {
     background-color: #333; /* Dark gray background */
 }
 
-#about, #portfolio, #blog {
+#about, #portfolio, #impact {
     background-color: #fff; /* White background */
 }
 
