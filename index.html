@@ -12,11 +12,13 @@
     <link rel="stylesheet" href="./css/services2.css">
     <link rel="stylesheet" href="./css/portfolio.css">
     <link rel="stylesheet" href="./css/impacto.css">
+    <link rel="stylesheet" href="./css/contact.css">
     
     <script src="./js/header.js"></script>
     <script src="./js/about.js"></script>
     <script src="./js/services.js"></script>
     <script src="./js/portfolio.js"></script>
+    <script src="./js/contact.js"></script>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -259,14 +261,24 @@
 
     <!-- Contact Section -->
     <section id="contact">
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d34858.70681732507!2d-74.04486450962379!3d4.708916108900234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sco!4v1715913812922!5m2!1sen!2sco" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="overlay"></div> <!-- The semi-transparent overlay -->
         <div class="container">
-            <h2>Contact Us</h2>
-            <p>Contact form for inquiries or consultations...</p>
-            <div class="contact-info">
-                <!-- Address, phone number, email, and social media links will go here -->
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                    <input type="text" id="lastname" name="lastname" placeholder="Lastname" required>
+                    <input type="text" id="projectType" name="projectType" placeholder="We work on..." required>
+                    <textarea id="message" name="message" placeholder="Hi! We are launching a new service and we need a strategy to make it sell." required></textarea>
+                    <button id="submit">Enviar por WhatsApp</button>
+                
             </div>
         </div>
     </section>
+
 
     <!-- Footer Section -->
     <footer>

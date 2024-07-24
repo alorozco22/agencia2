@@ -73,15 +73,15 @@
 	text-transform: uppercase;
 }
 
-input {
+#impact .wrapper .impact-container input {
 	display: none;
 }
 
-input:checked + label {
+#impact .wrapper .impact-container input:checked + label {
 	width: 600px;
 }
 
-input:checked + label .impact-description {
+#impact .wrapper .impact-container input:checked + label .impact-description {
 	opacity: 1 !important;
 	transform: translateY(0) !!important;
 }
