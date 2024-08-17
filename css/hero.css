@@ -2,25 +2,74 @@
 #hero {
     position: relative;
     text-align: center;
-    padding: 100px 20px; /* Adjust padding as needed */
-
-
+    /*padding: 100px 20px;*/    
+    height: 100vh;
+    overflow: hidden;
 }
 
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Black overlay with 30% opacity */
+    z-index: 2;
+}
 
 .hero-content {
+    position: relative;
+    z-index: 3;
     height: 100%;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+#subtitle-header {
+    font-size: 24px;
+    font-weight: 300;
+    color: #ffffff; /* White color for subtitle */
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeInUp 3s forwards;
+}
+
+@media screen and (min-width: 768px) {
+    #subtitle-header {
+        font-size: 32px;
+    }
 }
 
 .first-line, .second-line {
-    font-size: 50px; /* Adjust font size as needed */
+    font-size: 50px; 
     font-weight: bold;
-    color: #ffcc00; /* Soft yellow color */
+    /*color: #ffcc00; */
+    color:white;
     margin: 0;
     padding: 0;
-    transform: translateX(-100%); /* Move elements off-screen initially */
-
+    transform: translateX(-100%);
 }
 
 @media screen and (min-width: 768px) {
@@ -57,6 +106,17 @@
     }
 }
 
+/* Keyframes for fade-in up animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 /* Styles for arrow-icon */
 .material-icons {
@@ -65,8 +125,6 @@
     left: 50%;
     color: #fff;
     animation: shakeArrow 0.5s infinite alternate;
-    
-
 }
 
 .button-container {
@@ -83,9 +141,6 @@
     }
 }
 
-
-
-
 .cta-btn {
     display: inline-block;
     padding: 10px 20px;
@@ -97,6 +152,7 @@
     transition: transform 0.3s, box-shadow 0.3s;
     bottom: 20vh;
     margin-top: 60px;
+    z-index: 3;
 }
 
 .cta-btn:hover {
